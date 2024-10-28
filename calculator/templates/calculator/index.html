@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generazione Dati</title>
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <script defer src="{% static '/js/app.js' %}"></script>
+</head>
+<body>
+    <main>
+        <h1 class="tittle">Inserimento Dati</h1>
+        <div id="containerInput" class="container-input">
+            <!-- I campi input verranno generati dinamicamente -->
+        </div>
+        <button id="generate">Genera PDF</button>
+    </main>
+</body>
+</html>
+
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>

@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <title>Visualizza Dati</title>
+</head>
+<body>
+    <h2>Dati Inseriti</h2>
+    <div id="dataDisplay">
+        {% for key, value in data.items %}
+            <p>{{ key }}: {{ value }}</p>
+        {% endfor %}
+    </div>
+</body>
+</html>
